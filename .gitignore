@@ -1,3 +1,9 @@
-terraform.tfvars
-terraform.tfstate.backup
+# recreate .gitignore (it was lost in the rewrite)
+cat <<'EOF' > .gitignore
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform*
 .terraform.lock.hcl
+*.tfvars
+EOF
